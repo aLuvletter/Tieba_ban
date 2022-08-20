@@ -57,7 +57,7 @@ def ban_id(ban_data):
     if os.path.getsize('user.txt') == 0:
         pass
     else:
-        with open('user.txt', encoding='utf-8') as f:
+        with open('user.txt') as f:
             for line in f.readlines():
                 with open('blacklist.json') as f:
                     json_all = json.load(f)
@@ -100,7 +100,7 @@ if __name__ == '__main__':
         f = open('user.txt', 'w', encoding='utf-8')
         f.close()
     else:
-        with open('tieba.config', encoding='utf-8') as f:
+        with open('tieba.config') as f:
             for line in f.readlines():
                 lines = line.strip('\n')
                 if line.split('=')[1] == '':
