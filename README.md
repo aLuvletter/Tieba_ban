@@ -36,11 +36,3 @@ xx吧主页右键查看源代码即可获取
 ### 使用建议
 
 建议使用单独一个吧务用户封禁广告用户，避免对普通违规用户循环封禁。
-
-### 错误提示
-
-第38行错误提示以下：
-
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb9 in position 6344: invalid start byte
-
-把之前的utf-8改成了gbk
