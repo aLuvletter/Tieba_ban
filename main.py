@@ -34,7 +34,7 @@ def get_id(url):
             f.close()
             ban_data.clear()
         else:
-            with open('blacklist.json', encoding='gbk') as f:
+            with open('blacklist.json') as f:
                 json_data = json.load(f)
                 json_text = str(json_data)
             f.close()
